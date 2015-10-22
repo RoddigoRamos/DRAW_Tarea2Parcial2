@@ -2,11 +2,9 @@ package models;
 
 import java.util.Date;
 import javax.persistence.Entity;
-import play.data.validation.Email;
-import play.data.validation.MaxSize;
-import play.data.validation.Password;
-import play.data.validation.Required;
+import play.data.validation.*;
 import play.db.jpa.Model;
+import play.mvc.With;
 
 /**
  * Modelo del usuario
@@ -29,6 +27,7 @@ public class Usuario extends Model{
     @Email
     @Required
     public String email;
+    public Boolean esAdmin;
 
     public Usuario(String usuario, String password, String primerApellido, String segundoApellido, String nombre, Date fechaNacimiento, String email) {
         this.usuario = usuario;

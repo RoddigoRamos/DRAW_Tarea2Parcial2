@@ -9,3 +9,4 @@ email=Email
 usuario=Usuario
 password=Contraseña
 fechaNacimiento=Fecha de Nacimiento
+esAdmin=Administrador
