@@ -9,8 +9,10 @@ import play.data.validation.Required;
 import play.db.jpa.Model;
 
 /**
- *
- * @author rodrigo
+ * Modelo del usuario
+ * 
+ * @author Rodrigo Arturo Ramos Najera
+ *  * 
  */
 @Entity
 public class Usuario extends Model{

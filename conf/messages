@@ -6,3 +6,6 @@ nombre=Nombre
 primerApellido=Primer Apellido
 segundoApellido=Segundo Apellido
 email=Email
+usuario=Usuario
+password=Contraseña
+fechaNacimiento=Fecha de Nacimiento

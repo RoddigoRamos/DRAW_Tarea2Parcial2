@@ -7,10 +7,22 @@ import java.util.*;
 
 import models.*;
 
+/***
+ * 
+ * @author Rodrigo Arturo Ramos Najera
+ * @version 1.0
+ */
+
+@With(Secure.class)
 public class Application extends Controller {
 
-    public static void index() {
+    /*public static void index() {
         render();
+    }*/
+    
+    public static void index() {
+        String user = Security.connected();
+        render(user);
     }
     
     public static void login() {

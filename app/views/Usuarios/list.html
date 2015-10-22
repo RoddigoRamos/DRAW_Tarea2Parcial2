@@ -10,7 +10,15 @@
     </div>
 
     <div id="crudListTable">
-        #{crud.table /}
+        #{crud.table fields:['nombre', 'primerApellido', 'segundoApellido', '']}
+            #{crud.custom 'nombre'}
+                ${object?.nombre} (${object?.email})
+            #{/crud.custom}
+            
+            #{crud.custom ''}
+                <a href="@{Usuarios.show(object?.id)}">Editar</a>
+            #{/crud.custom}
+        #{/crud.table}
     </div>
 
     <div id="crudListPagination">
